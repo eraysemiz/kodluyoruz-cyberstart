@@ -1,0 +1,32 @@
+[22,27,16,2,18,6] dizisinin insertion sort ile sıralanması:
+
+
+1. adım: [22,27,16,2,18,6] -> Makine başlangıç indexi olan 1 deki sayı 27 ile solundaki elemanları kıyaslar soldaki eleman 22, sağdaki 27 den küçük olduğu için yer değişikliği olmaz.
+
+2. adım: [16,22,27,2,18,6] -> 16 ile solundaki elemanlar karşılaştırılır. 27 ve 22 16 dan büyük olduğu için 16 önce 27 ile sonrada 22 ile yer değiştirir.
+
+3. adım: [2,16,22,27,18,6] -> 2 ile solundaki elemanlar karşılaştırılır. 2, 16, 27 ve 22 den küçük olduğu için sırayla 2 bu sayılarla yer değiştererek dizinin başına gelir.
+
+
+4. adım: [2,16,18,22,27,6] -> 18 ile solundaki elemanlar karşılaştırılıp, 18 gerekli yere gelene kadar kaydırılır.
+
+5. adım: [2,6,16,18,22,27] -> 6 ile solundaki elemanlar karşılaştırılır, ve gerekli kaydırma işlemi yapılır.
+
+
+Big O Gösterimi: O(n^2)
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? 
+1.Average Case
+
+
+[7,3,5,8,2,9,4,15,6] dizisinin selection sort ile sıralanmasının ilk 4 adımını yazınız. :
+
+1. Adım: [2,3,5,8,7,9,4,15,6] -> Makine dizideki en küçük eleman olan 2 yi bulup dizinin başına alır. 2 nin eski yerine ise index 0 daki elemanı koyar.
+
+2. Adım: [2,3,5,8,7,9,4,15,6] -> Makine kontrol etmeye index 1 den başlayarak dizinin 2. en küçük elemanını bulur ve index 1 e koyar. index 1 deki eleman 2. en küçüğün indexine koyulur
+
+3. Adım: [2,3,4,8,7,9,5,15,6] -> index 2 den başlayarak min sayı bulunur. min sayı index 2 ye, index 2 deki eleman, min sayının eski indexine koyulur 
+
+3. Adım: [2,3,4,5,7,9,8,15,6] -> aynı işlem index 3 için tekrarlanır ve gerekli değiştirme işlemleri yapılır
+
+
